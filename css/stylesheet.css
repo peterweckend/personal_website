@@ -1,7 +1,9 @@
 * {
 	width: 100%;
-
+	color: #262626;
 }
+
+
 header {
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
@@ -9,13 +11,8 @@ header {
 
 }
 
-#links {
-	
-	text-align: center;
 
-	padding-top: 25%;
-	
-}
+
 
 #footer {
    position:absolute;
