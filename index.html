@@ -3,30 +3,59 @@
 	<head>
 		<link href="css/stylesheet.css" type="text/css" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 		<link rel="shortcut icon" href="/fav_icon.ico" type="image/x-icon">
 		<link rel="icon" href="/fav_icon.ico" type="image/x-icon">
 		<title>Peter Weckend</title>
+
+		<script src = "js_web.js"></script>
 	</head>
 
 	<body>
 		<header>
-			<nav>
+			<nav id="mynav">
 				<ul>
-					<li><a href="index.html">Peter Weckend</a></li>
-					<li><a href="#test2">About</a></li>
-					<li><a href="#test3">Resume</a></li>
-					<li><a href="#test4">Projects</a></li>
+					<li><a class="c1" href="http://www.peterweckend.com">Peter Weckend</a></li>
+					<li><a class="c1" href="#about">About</a></li>
+					<li><a class="c1" href="#resume">Resume</a></li>
+					<li><a class="c1" href="#projects">Projects</a></li>
 				</ul>
 			</nav>
-			<h1 id="title">Peter Weckend</h1>
+			<h1 id="title" class="c2">Peter Weckend</h1>
 
-			<h5 id="subtitle">I'm a student at the <a href="https://www.ualberta.ca/" class="link">University of Alberta</a>. This website is mostly for practice.</h5>
+			<h5 id="subtitle" class="c2">I'm a student at the <a href="https://www.ualberta.ca/" class="c2" class="link" id="uofa"  onmouseover="this.style.color='#666666'" onmouseout="this.style.color='#262626'" >University of Alberta</a>. This website is mostly for practice.</h5>
 		</header>
 
-		
-		<div id="footer">
-			<p>(And it's not finished yet)</p>
+
+		<!-- <button type="button" onclick="ChangeColours()" id="changebutton">Add some variety</button> -->
+		<div id="footer2">
+			<button id="footer" type="button" class="c2" onclick="ChangeColours()">Add some variety</button>
+			<!-- <p class="c2">(And it's not finished yet)</p> -->
 		</div>
+
+		<script>
+		// future ideas: randomly generate new colours?
+		var count = 1;
+		var colour2 = ["#262626", "#39134c", "#ffffff", "#f69454", "#ddbc95", "#1c2a43"]; // title text
+		var colour1 = ["#ffffff", "#75b1a9", "#262626", "#0a3055",  "#2e343b", "#a1be95"]; // background
+		var colourmod = 6;
+
+		</script>
+
+<!-- 
+		<input type="text" id="inputstuff" 
+		onchange="var dataEntered=document.getElementById('inputstuff').value;
+		alert('User typed:' + dataEntered);"> -->
+
+<!-- 		<form action="#" id="sampForm">
+			<input id='charInput' type="text">
+			<p id="keyData">Key Data Here</p>
+
+			<input type="submit" value="Submit">
+		</form> -->
+
+
+
 	</body>
 
 
