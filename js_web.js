@@ -14,46 +14,58 @@ function ChangeColours(){
 	document.body.style.background = colour1[count%colourmod];
 	document.getElementById("mynav").style.background = colour2[count%colourmod];
 
-	// darken colours
-
-	if ((count)%colourmod == 2){
-		document.getElementById("uofa").onmouseover = function()
+	// all non-nav links
+	document.getElementsByClassName("link")
+	var links = document.getElementsByClassName("link");
+	for (var j = 0; j < links.length; j++){
+		// darken colours
+		if ((count)%colourmod == 2){
+		links[j].onmouseover = function()
 		{
 			this.style.color= shadeColor2(colour2[(count-1)%colourmod], -0.4);
-		}
-	}	
-	// lighten colours
-	else {
-		document.getElementById("uofa").onmouseover = function()
+		}}	
+		// lighten colours
+		else {
+			links[j].onmouseover = function()
+			{
+				this.style.color= shadeColor2(colour2[(count-1)%colourmod], 0.4);
+			}}
+
+		links[j].onmouseout = function()
 		{
-			this.style.color= shadeColor2(colour2[(count-1)%colourmod], 0.4);
+			this.style.color= colour2[(count - 1)%colourmod];
 		}
 	}
 
-	document.getElementById("uofa").onmouseout = function()
-	{
-		this.style.color= colour2[(count - 1)%colourmod];
+	if ((count)%colourmod == 3 || (count)%colourmod == 2 || (count)%colourmod == 4){
+		document.getElementById("gitlogo").src="GitHub-Mark-Light-120px-plus.png"
+	} 
+	else {
+		document.getElementById("gitlogo").src="GitHub-Mark-120px-plus.png"
 	}
 
-	//////////
 
-	if ((count)%colourmod == 2){
-		document.getElementById("footer").onmouseover = function()
+	// nav links
+	document.getElementsByClassName("link2")
+	var links = document.getElementsByClassName("link2");
+	for (var j = 0; j < links.length; j++){
+		// darken colours
+		if ((count)%colourmod == 2){
+		links[j].onmouseover = function()
 		{
 			this.style.color= shadeColor2(colour2[(count-1)%colourmod], -0.4);
-		}
-	}	
-	// lighten colours
-	else {
-		document.getElementById("footer").onmouseover = function()
-		{
-			this.style.color= shadeColor2(colour2[(count-1)%colourmod], 0.4);
-		}
-	}
+		}}	
+		// lighten colours
+		else {
+			links[j].onmouseover = function()
+			{
+				this.style.color= shadeColor2(colour2[(count-1)%colourmod], 0.4);
+			}}
 
-	document.getElementById("footer").onmouseout = function()
-	{
-		this.style.color= colour2[(count - 1)%colourmod];
+		links[j].onmouseout = function()
+		{
+			this.style.color= colour1[(count - 1)%colourmod];
+		}
 	}
 
 

@@ -60,6 +60,7 @@ nav li a.current {
 #subtitle {
    padding-top: 15px;
    font-size: 80%;
+   margin-bottom: 35px;
 }
 
 /*#changebutton {
@@ -84,11 +85,11 @@ nav li a.current {
 
 
    font-family: 'Lobster', cursive;
-   font-size: 250%;
+   font-size: 300%;
 }
 
 #footer2 {
-   margin-top: 200px;
+   margin-top: 150px;
 
    text-align: center;
    display: block;
@@ -100,6 +101,11 @@ nav li a.current {
 
 .link:hover {
    color: #666666;
+}
+
+#gitlogo {
+   height: 70px;
+   width: 70px;
 }
 
 @media screen and (max-width: 768px) {
@@ -119,12 +125,21 @@ nav li a.current {
    #subtitle {
       padding-top: 25px;
       font-size: 50%;
+      margin-bottom: 25px;
    }
 
    #footer {
-      height: 40px;
-      font-size: 140%;
+      font-size: 350%;
    }
+   #footer2{
+      margin-top: 250px;
+   }
+
+   #gitlogo {
+      height: 50px;
+      width: 50px;
+   }
+
 
 }
 
