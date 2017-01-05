@@ -37,12 +37,6 @@ function ChangeColours(){
 		}
 	}
 
-	if ((count)%colourmod == 3 || (count)%colourmod == 2 || (count)%colourmod == 4){
-		document.getElementById("gitlogo").src="images/GitHub-Mark-Light-120px-plus.png"
-	} 
-	else {
-		document.getElementById("gitlogo").src="images/GitHub-Mark-120px-plus.png"
-	}
 
 
 	// nav links
