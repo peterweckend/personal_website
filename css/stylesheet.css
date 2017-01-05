@@ -108,6 +108,10 @@ nav li a.current {
    width: 70px;
 }
 
+#gitlogo:hover {
+   opacity: 0.65;
+}
+
 @media screen and (max-width: 768px) {
    nav li {
       margin-right: 12px;
