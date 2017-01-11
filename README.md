@@ -1,5 +1,5 @@
 # personal_website
-peterweckend.com
+www.peterweckend.com
 
 I'm teaching myself HTML/CSS/JavaScript (and some jQuery) with the goal of being able to build things like Chrome extensions for fun in the future. Eventually I want to learn some angular.js, node,js, etc., before moving on to Flask or Django.
 
