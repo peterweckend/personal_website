@@ -51,9 +51,7 @@ nav li a.current {
 #title {
    padding: 40px 0px 0px 0px;
    font-size: 50px;
- /*  border-bottom: #262626;
-   border-style: solid;
-   border-width: 50%*/
+
 }
 
 
@@ -67,14 +65,6 @@ nav li a.current {
    margin-right: 10%;
 }
 
-/*#changebutton {
-   font-family: 'Lobster', cursive;
-   font-size: 150%;
-   text-align: center;
-
-
-}
-*/
 
 #relcour {
    text-align: center;
