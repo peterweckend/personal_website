@@ -1,20 +1,10 @@
-function return5(){
-	var answer = 9;
-	document.write(answer);
-}
-
-function CalculateTip(){
-	return 10;
-}
-
 
 function ChangeColours(){
-
-
+	// loops through list of colours using modulo
 	document.body.style.background = colour1[count%colourmod];
 	document.getElementById("mynav").style.background = colour2[count%colourmod];
 
-	// all non-nav links
+	// all non-nav links; change all their colours
 	document.getElementsByClassName("link")
 	var links = document.getElementsByClassName("link");
 	for (var j = 0; j < links.length; j++){
@@ -36,7 +26,7 @@ function ChangeColours(){
 			this.style.color= colour2[(count - 1)%colourmod];
 		}
 	}
-
+	// change github link to be light or dark depending on scheme
 	if ((count)%colourmod == 3 || (count)%colourmod == 2 || (count)%colourmod == 4){
 		document.getElementById("gitlogo").src="images/GitHub-Mark-Light-120px-plus.png"
 	} 
@@ -79,7 +69,7 @@ function ChangeColours(){
 	for (var i = 0; i < y.length; i++){
 		y[i].style.color = colour1[count%colourmod];
 	}
-
+	
 	count = count + 1;
 }
 
@@ -89,7 +79,7 @@ function shadeColor2(color, percent) {
     return "#"+(0x1000000+(Math.round((t-R)*p)+R)*0x10000+(Math.round((t-G)*p)+G)*0x100+(Math.round((t-B)*p)+B)).toString(16).slice(1);
 }
 
-
+// fade in the title, and the colour button
 $(document).ready(function() {
 	$('.fadein1').hide();
 	$('.fadein2').hide();
