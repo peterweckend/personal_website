@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background-color: #fdf7eb;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+ }
+
+ video {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ }

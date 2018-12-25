@@ -54,8 +54,6 @@ nav li a.current {
 
 }
 
-
-
 #subtitle {
    padding-top: 30px;
    font-size: 30px;
@@ -84,6 +82,10 @@ nav li a.current {
 
 .link:hover {
    color: #919ba0;
+}
+
+.highlighted {
+   text-decoration: underline
 }
 
 dt {
