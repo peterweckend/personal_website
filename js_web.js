@@ -26,12 +26,14 @@ function ChangeColours(){
 			this.style.color= colour2[(count - 1)%colourmod];
 		}
 	}
-	// change github link to be light or dark depending on scheme
+	// change links to be light or dark depending on scheme
 	if ((count)%colourmod == 3 || (count)%colourmod == 2 || (count)%colourmod == 4){
-		document.getElementById("gitlogo").src="images/GitHub-Mark-Light-120px-plus.png"
+		document.getElementById("gitLogo").src="images/GitHub-Mark-Light-120px-plus.png"
+		document.getElementById("linkedInLogo").src="images/In-White-121px-R.png"
 	} 
 	else {
-		document.getElementById("gitlogo").src="images/GitHub-Mark-120px-plus.png"
+		document.getElementById("gitLogo").src="images/GitHub-Mark-120px-plus.png"
+		document.getElementById("linkedInLogo").src="images/In-Black-121px-R.png"
 	}
 
 

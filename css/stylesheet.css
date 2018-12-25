@@ -48,6 +48,16 @@ nav li a.current {
    color: #666666;
 }
 
+.iconLinks li {
+   display: inline;
+   /* padding-right: 80px; */
+   
+}
+
+#linkedIn {
+   padding-left: 80px;
+}
+
 #title {
    padding: 100px 0px 5px 0px;
    font-size: 200%;
@@ -85,12 +95,12 @@ nav li a.current {
    color: #666666;
 }
 
-#gitlogo {
+.logoLinks {
    height: 70px;
    width: 70px;
 }
 
-#gitlogo:hover {
+.logoLinks:hover {
    opacity: 0.65;
 }
 
